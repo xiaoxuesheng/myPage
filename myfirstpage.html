@@ -3,12 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <base target="_self">
 </head>
 <body>
-<h1>标题</h1>
-段落
-<p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>段落
-段落
+
+<h1>基础标签</h1>
+
+<h2>标题</h2>
+
+<p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+
 <hr/>
+
+
+<img src="img/1.jpg" width="268" height="468" title="宇智波鼬" alt="图片木有了!"/>
+
+<br/>
+
+<a href="http://www.baidu.com">链接</a>
+
+<a href="http://www.baidu.com" target="_self" title="这是个原有页面链接">原有页面跳转</a>
+
+<a href="http://www.baidu.com" target="_blank" title="这是个新的页面">新开页面跳转</a>
+
+<a href="#">假链接一</a>
+
+<a href="javascript:">假链接二</a>
+
+<a href="">锚点跳转</a>
+
+<h2 id="node">锚点跳转处</h2>
+
+<hr/>
+
+<h1>列表标签</h1>
+<h2>无序列表</h2>
+<h3>中国有哪些城市</h3>
+<ul>
+    <li>北京</li>
+    <li>上海</li>
+    <li>广州</li>
+    <li>深圳</li>
+</ul>
+<hr/>
+<h2>定义列表</h2>
+<di>
+    <dt>洛杉矶</dt>
+    <dd>第一个大城市</dd>
+    <dt>华盛顿</dt>
+    <dd>第二个大城市</dd>
+</di>
+<hr/>
+<h2>表格标签</h2>
+<table border="1" width="500px" height="300px">
+    <tr align="center">
+        <td>第一行第一列</td>
+        <td>第一行第二列</td>
+        <td>第一行第三列</td>
+    </tr>
+    <tr>
+        <td>第二行第一列</td>
+        <td>第二行第二列</td>
+        <td>第二行第三列</td>
+    </tr>
+
+</table>
+<hr/>
+<h2>细线表格</h2>
+<table bgcolor="black" width="500px" height="300px">
+    <caption>表格题目</caption>
+    <tr bgcolor="#7fffd4">
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>技能</th>
+    </tr>
+    <tr bgcolor="white">
+        <td>张三</td>
+        <td>11</td>
+        <td>写轮子</td>
+    </tr>
+    <tr bgcolor="white">
+        <td>张五</td>
+        <td>12</td>
+        <td>写傻子</td>
+    </tr>
+</table>
+<hr/>
+<h2>单元格合并</h2>
+<table bgcolor="black" border="0" width="500px" height="300px">
+    <tr bgcolor="white">
+        <td colspan="2"></td>
+        <!--<td></td>-->
+        <td></td>
+    </tr>
+
+    <tr bgcolor="white">
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+    </tr>
+
+    <tr bgcolor="white">
+        <td></td>
+        <!--<td></td>-->
+        <td></td>
+    </tr>
+</table>
+<hr/>
+<h2>表单标签</h2>
+<form action="http://www.baidu.com">
+    <input type="text" name="aa"/>明文输入<br>
+    <input type="password" name="bb"/>密文输入<br>
+    <input type="text" value="默认值"/>带默认值明文<br>
+
+    <input type="radio" name="sex"/>男   <br>
+    <input type="radio" name="sex"/>女   <br>
+    <input type="radio" name="sex"/>苞米 <br>
+
+    <input type="checkbox" />篮球
+    <input type="checkbox"/>足球
+    <input type="checkbox"/>排球
+    <br>
+    普通按钮<input type="button" value="我是按钮"/><br>
+    图片按钮<input type="image" src="img/1.jpg"/><br>
+    重置按钮<input type="reset" /><br>
+    提交按钮<input type="submit"/>
+
+</form>
+<hr/>
+<form>
+    <label for="id">账户：</label><input type="text" id="id"/>
+</form>
+<hr/>
+
+
 </body>
 </html>
